@@ -4,7 +4,6 @@ FROM google/nodejs
 
 #==== 2 =====
 RUN apt-get update && apt-get install -y git
-RUN npm install -g PM2
 
 #==== 3 =====
 WORKDIR /app
