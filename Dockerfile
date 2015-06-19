@@ -7,8 +7,8 @@ MAINTAINER Pradit R.
 RUN apt-get update && apt-get install -y git
 
 #==== 3 =====
-RUN mkdir /www/app
-WORKDIR /www/app
+RUN mkdir -p /www/innovation
+WORKDIR /www/innovation
 
 #==== 4 =====
 COPY ./scripts/start.sh .
