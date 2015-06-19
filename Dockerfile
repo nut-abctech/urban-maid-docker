@@ -1,12 +1,14 @@
 
 #==== 1 =====
 FROM google/nodejs
+MAINTAINER Pradit R.
 
 #==== 2 =====
 RUN apt-get update && apt-get install -y git
 
 #==== 3 =====
-WORKDIR /app
+RUN mkdir /www/app
+WORKDIR /www/app
 
 #==== 4 =====
 COPY ./scripts/start.sh .
